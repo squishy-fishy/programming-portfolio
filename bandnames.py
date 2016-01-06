@@ -29,11 +29,12 @@ def plural_noun():
 	return random.choice(plural_nouns)
 	
 def main():
-	while true:
+	while True:
 		name = raw_input("enter your name: ")
 		if name == "q":
 			break
-		random.seed(name)
+		random.choice(name)
 		print title(), name, "and the", adj(), plural_noun()
 		
 main()
+
